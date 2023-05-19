@@ -1,0 +1,30 @@
+{
+    "sourceFile": "Greetr.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1684513935983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684514099925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n             }\n             return this;\n         },\n \n-        setLang: function() {\n+        setLang: function(l) {\n             this.language = lang;\n \n             this.validate();\n \n"
+                },
+                {
+                    "date": 1684516779349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,8 +76,9 @@\n \n             return this;\n \n         },\n+\n         \n     };\n \n     Greetr.init = function(firstName, lastName, language) {\n"
+                },
+                {
+                    "date": 1684516944624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,9 @@\n                 throw 'Missing jQuery selector';\n             }\n \n             var msg;\n-            if ()\n+            if (f)\n         }\n     };\n \n     Greetr.init = function(firstName, lastName, language) {\n"
+                }
+            ],
+            "date": 1684513935983,
+            "name": "Commit-0",
+            "content": "(function(global, $) {\n    \n    var Greetr = function(firstName, lastName, language) {\n        return new Greetr.init(firstName, lastName, language);\n    }\n\n    var supportedLangs = ['en', 'es'];\n    \n    greetings = {\n        en: 'Hello',\n        es: 'Hola'\n    };\n\n   var formalGreetings = {\n        en: 'Greetings',\n        es: 'Saludos'\n   };\n\n   var logMessages = {\n        en: 'Logged in',\n        es: 'Inicio sesion'\n   };\n\n\n    Greetr.prototype = {\n\n        fullName: function() {\n            return this.firstName + ' ' + this.lastName;\n        },\n\n        validate: function() {\n           if (supportedLangs.indexOf(this.language) === -1) {\n                throw \"Invalid language\";\n            }\n        },\n\n        greeting: function() {\n            return greetings[this.language] + ' ' + this.firstName + '!';\n        },\n\n        formalGreeting: function() {\n            return formalGreetings[this.language] + ', ' + this.fullName();\n        },\n\n        greet: function(formal) {\n            var msg;\n\n            //if undefined or null it will be coerced to 'false'\n            if (formal) {\n                msg = this.formalGreeting();\n            }\n            else {\n                msg = this.greeting()\n            }\n\n            if (console) {\n                console.log(msg);\n            }\n\n            // 'this' refers to the calling object at execution time\n            // makes the method chainable\n            return this;\n        },\n        \n        log: function() {\n            if (console) {\n                console.log(logMessages[this.language] + '; ' + this.fullName());\n            }\n            return this;\n        },\n\n        setLang: function() {\n            this.language = lang;\n\n            this.validate();\n\n            return this;\n\n        }\n    };\n\n    Greetr.init = function(firstName, lastName, language) {\n\n        var self = this;\n        self.firstName = firstName || '';\n        self.lastName = lastName || '';\n        self.language = language || 'en';\n\n    }\n\n    Greetr.init.prototype = Greetr.prototype;\n\n    global.Greetr = global.G$ = Greetr;\n\n}(window, jQuery));"
+        }
+    ]
+}

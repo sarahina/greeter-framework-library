@@ -1,0 +1,122 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 26,
+            "patches": [
+                {
+                    "date": 1684514246876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684514254446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n   \n     <title>Document</title>\n </head>\n <body>\n+    <div></div>\n \n \n \n-    \n     <script src=\"jquery-1.11.2.js\"></script>\n         <script src=\"Greetr.js\"></script>\n         <script src=\"app.js\"></script>\n </body>\n"
+                },
+                {
+                    "date": 1684514260363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   \n     <title>Document</title>\n </head>\n <body>\n-    <div></div>\n+    <div id=\"\"></div>\n \n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n"
+                },
+                {
+                    "date": 1684514273678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   \n     <title>Document</title>\n </head>\n <body>\n-    <div id=\"\"></div>\n+    <div id=\"logindiv\"><se</div>\n \n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n"
+                },
+                {
+                    "date": 1684514281011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   \n     <title>Document</title>\n </head>\n <body>\n-    <div id=\"logindiv\"><se</div>\n+    <div id=\"logindiv\"><select></select></div>\n \n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n"
+                },
+                {
+                    "date": 1684514288290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   \n     <title>Document</title>\n </head>\n <body>\n-    <div id=\"logindiv\"><select></select></div>\n+    <div id=\"logindiv\"><select id=\"lang\"></select></div>\n \n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n"
+                },
+                {
+                    "date": 1684514299442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   \n     <title>Document</title>\n </head>\n <body>\n-    <div id=\"logindiv\"><select id=\"lang\"></select></div>\n+    <div id=\"logindiv\"><select id=\"lang\"> <option</select></div>\n \n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n"
+                },
+                {
+                    "date": 1684514305244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n   \n     <title>Document</title>\n </head>\n <body>\n-    <div id=\"logindiv\"><select id=\"lang\"> <option</select></div>\n+    <div id=\"logindiv\">\n+        <select id=\"lang\"> <option></option></select></div>\n \n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n"
+                },
+                {
+                    "date": 1684514312761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,11 @@\n     <title>Document</title>\n </head>\n <body>\n     <div id=\"logindiv\">\n-        <select id=\"lang\"> <option></option></select></div>\n+        <select id=\"lang\"> \n+            <option></option>\n+        </select></div>\n \n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n"
+                },
+                {
+                    "date": 1684514317937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n <body>\n     <div id=\"logindiv\">\n         <select id=\"lang\"> \n             <option></option>\n+            <op\n         </select></div>\n \n \n \n"
+                },
+                {
+                    "date": 1684514326355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n </head>\n <body>\n     <div id=\"logindiv\">\n         <select id=\"lang\"> \n+            <option value=\"\"></option>\n             <option></option>\n-            <op\n         </select></div>\n \n \n \n"
+                },
+                {
+                    "date": 1684514333984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </head>\n <body>\n     <div id=\"logindiv\">\n         <select id=\"lang\"> \n-            <option value=\"\"></option>\n+            <option value=\"en\">English</option>\n             <option></option>\n         </select></div>\n \n \n"
+                },
+                {
+                    "date": 1684514340378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <body>\n     <div id=\"logindiv\">\n         <select id=\"lang\"> \n             <option value=\"en\">English</option>\n-            <option></option>\n+            <option value=\"es\"></option>\n         </select></div>\n \n \n \n"
+                },
+                {
+                    "date": 1684514351162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,11 @@\n <body>\n     <div id=\"logindiv\">\n         <select id=\"lang\"> \n             <option value=\"en\">English</option>\n-            <option value=\"es\"></option>\n-        </select></div>\n+            <option value=\"es\">Spanish</option>\n+        </select>\n+    </div>\n \n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n"
+                },
+                {
+                    "date": 1684514360297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         <select id=\"lang\"> \n             <option value=\"en\">English</option>\n             <option value=\"es\">Spanish</option>\n         </select>\n+        <input>\n     </div>\n \n \n \n"
+                },
+                {
+                    "date": 1684514365588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         <select id=\"lang\"> \n             <option value=\"en\">English</option>\n             <option value=\"es\">Spanish</option>\n         </select>\n-        <input>\n+        <input type>\n     </div>\n \n \n \n"
+                },
+                {
+                    "date": 1684514370930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         <select id=\"lang\"> \n             <option value=\"en\">English</option>\n             <option value=\"es\">Spanish</option>\n         </select>\n-        <input type>\n+        <input type=\"button\">\n     </div>\n \n \n \n"
+                },
+                {
+                    "date": 1684514378508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         <select id=\"lang\"> \n             <option value=\"en\">English</option>\n             <option value=\"es\">Spanish</option>\n         </select>\n-        <input type=\"button\">\n+        <input type=\"button\" value=\"Login\">\n     </div>\n \n \n \n"
+                },
+                {
+                    "date": 1684514385248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         <select id=\"lang\"> \n             <option value=\"en\">English</option>\n             <option value=\"es\">Spanish</option>\n         </select>\n-        <input type=\"button\" value=\"Login\">\n+        <input type=\"button\" value=\"Login\" id=\"login\">\n     </div>\n \n \n \n"
+                },
+                {
+                    "date": 1684514411305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,13 @@\n         <select id=\"lang\"> \n             <option value=\"en\">English</option>\n             <option value=\"es\">Spanish</option>\n         </select>\n-        <input type=\"button\" value=\"Login\" id=\"login\">\n+        <input type=\"button\" value=\"Login\" id=\"login\" />\n     </div>\n+    \n \n \n-\n     <script src=\"jquery-1.11.2.js\"></script>\n         <script src=\"Greetr.js\"></script>\n         <script src=\"app.js\"></script>\n </body>\n"
+                },
+                {
+                    "date": 1684514418882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n             <option value=\"es\">Spanish</option>\n         </select>\n         <input type=\"button\" value=\"Login\" id=\"login\" />\n     </div>\n-    \n+    <h1 ></h1>\n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n         <script src=\"Greetr.js\"></script>\n"
+                },
+                {
+                    "date": 1684514424173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n             <option value=\"es\">Spanish</option>\n         </select>\n         <input type=\"button\" value=\"Login\" id=\"login\" />\n     </div>\n-    <h1 ></h1>\n+    <h1 id=\"greeting\"></h1>\n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n         <script src=\"Greetr.js\"></script>\n"
+                },
+                {
+                    "date": 1684514433782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n         </select>\n         <input type=\"button\" value=\"Login\" id=\"login\" />\n     </div>\n     <h1 id=\"greeting\"></h1>\n+    <script>\n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n         <script src=\"Greetr.js\"></script>\n"
+                },
+                {
+                    "date": 1684514439606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         </select>\n         <input type=\"button\" value=\"Login\" id=\"login\" />\n     </div>\n     <h1 id=\"greeting\"></h1>\n-    <script>\n+    <script ></script>\n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n         <script src=\"Greetr.js\"></script>\n"
+                },
+                {
+                    "date": 1684514445733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         </select>\n         <input type=\"button\" value=\"Login\" id=\"login\" />\n     </div>\n     <h1 id=\"greeting\"></h1>\n-    <script ></script>\n+    <script src=\"j\"></script>\n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n         <script src=\"Greetr.js\"></script>\n"
+                },
+                {
+                    "date": 1684514452592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         </select>\n         <input type=\"button\" value=\"Login\" id=\"login\" />\n     </div>\n     <h1 id=\"greeting\"></h1>\n-    <script src=\"j\"></script>\n+   \n \n \n     <script src=\"jquery-1.11.2.js\"></script>\n         <script src=\"Greetr.js\"></script>\n"
+                },
+                {
+                    "date": 1684514461541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,13 +13,10 @@\n         </select>\n         <input type=\"button\" value=\"Login\" id=\"login\" />\n     </div>\n     <h1 id=\"greeting\"></h1>\n-   \n-\n-\n     <script src=\"jquery-1.11.2.js\"></script>\n-        <script src=\"Greetr.js\"></script>\n+    <script src=\"Greetr.js\"></script>\n         <script src=\"app.js\"></script>\n </body>\n </html>\n \n"
+                }
+            ],
+            "date": 1684514246876,
+            "name": "Commit-0",
+            "content": "\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  \n    <title>Document</title>\n</head>\n<body>\n\n\n\n    \n    <script src=\"jquery-1.11.2.js\"></script>\n        <script src=\"Greetr.js\"></script>\n        <script src=\"app.js\"></script>\n</body>\n</html>\n\n\n\n"
+        }
+    ]
+}
