@@ -20,20 +20,23 @@
         es: 'Saludos'
    };
 
-    // logger message
+    // logger messages
    var logMessages = {
         en: 'Logged in',
         es: 'Inicio sesion'
    };
 
-
+    // prototype holds methods (to save memory space)
     Greetr.prototype = {
 
+        // 'this' refers to the calling object at execution time
         fullName: function() {
             return this.firstName + ' ' + this.lastName;
         },
 
         validate: function() {
+            // check that is a valid range
+            // references the externally inaccessible 'suppotedLangs' within the closure
            if (supportedLangs.indexOf(this.language) === -1) {
                 throw "Invalid language";
             }
